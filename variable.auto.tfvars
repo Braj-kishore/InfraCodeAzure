@@ -10,6 +10,7 @@ enable_system_managed_identity=true
 
 application_insights="abcdapplication"
 
+enable_AppService_AutoScale= true
 containers=[
     {
         "name"="testconatiner1"
