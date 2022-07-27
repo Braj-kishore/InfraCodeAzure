@@ -1,6 +1,9 @@
-
-$RESOURCE_GROUP_NAME="TerraformRg"
-$STORAGE_ACCOUNT_NAME="tfstate1726232610"
+<# Replace the param $RESOURCE_GROUP_NAME and STORAGE_ACCOUNT_NAME  with your own value.#>
+[CmdletBinding()]
+param(
+       [string] $RESOURCE_GROUP_NAME="TerraformRg"
+       [string] $STORAGE_ACCOUNT_NAME="tfstate1726232610"
+)
 
 <#
  Fetch the storage access key assigned it to the environment variable.This key is used to access the tf state file from the azure blob.
