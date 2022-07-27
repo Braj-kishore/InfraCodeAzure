@@ -12,3 +12,11 @@ Following azure resources are required to set up the entire infrastructure as pe
 6. Vnet/Subnet #one subnet for vnet integration in the frontend and another subnet for the servcie end point.
 7. Nsg 
 8. Application insight.
+
+Steps of execution.
+1. run the ps script tf_Powershell.ps1 under the folder Psfile
+2. terraformexecution.ps1 
+<h1>Architecture Digram 
+</h1>
+
+![image](https://user-images.githubusercontent.com/89480141/130726680-e8b9f948-5ff8-4064-8038-3d51bdd82ee4.png)
