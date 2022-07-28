@@ -5,6 +5,7 @@ resource "azurerm_app_service_plan" "appplan" {
   name                = "${var.app_service_plan_name}-plan"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
+  kind = var.app_service_plan_kind
   sku {
     tier = var.app_service_sku.tier
     size = var.app_service_sku.size
@@ -62,7 +63,7 @@ resource "azurerm_application_insights" "appinsights" {
 
 #------------------------------------------------------------------------
 
-resource "azurerm_monitor_autoscale_setting" "test" {
+resource "azurerm_monitor_autoscale_setting" "Appautoscale" {
   count = var.enable_AppService_AutoScale == true ? 1 :0
   name                = format("%s-%s", var.app_service_plan_name,"AutoscaleSetting")
   resource_group_name = "${azurerm_resource_group.rg.name}"

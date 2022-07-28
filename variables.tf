@@ -13,7 +13,11 @@ variable "app_service_plan_name" {
     description = "app service plan name"
   
 }
-
+variable "app_service_plan_kind" {
+  type = "string"
+  description = " The kind of the App Service Plan to create"
+  default = "Windows"
+}
 variable "app_service_sku" {
     type = object({
         tier=string
