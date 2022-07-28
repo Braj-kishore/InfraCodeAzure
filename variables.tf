@@ -14,7 +14,7 @@ variable "app_service_plan_name" {
   
 }
 variable "app_service_plan_kind" {
-  type = "string"
+  type = string
   description = " The kind of the App Service Plan to create"
   default = "Windows"
 }
