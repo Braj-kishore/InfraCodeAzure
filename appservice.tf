@@ -31,6 +31,15 @@ resource "azurerm_app_service" "app" {
   
   site_config {
     dotnet_framework_version = "v4.0"
+    dynamic "ip_restriction"{
+      for_each= length(regexall("/backend$/gi", var.appservice_name[count.index])) > 0 ? [1] :[]
+      content{
+        virtual_network_subnet_id= azurerm_subnet.subnet[count.index].id
+        priority=100
+        action="Allow"
+      }
+    }
+
   }
 
   https_only=true
