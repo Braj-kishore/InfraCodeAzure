@@ -5,13 +5,13 @@
       "serviceBusNamespaceName": {
         "type": "string",
         "metadata": {
-          "description": "Name of the Service Bus namespace"
+          "description": "Name of the Service Bus namespace."
         }
       },
       "serviceBusQueueName": {
         "type": "string",
         "metadata": {
-          "description": "Name of the Queue"
+          "description": "Name of the Queue."
         }
       },
       "location": {
