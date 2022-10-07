@@ -4,7 +4,7 @@
   provide the details of the app id, tennat id, client secret and 
   subscription.
   else
-  provide the credential in the get-credential.
+  provide the credential in the get-credential command.
 #>
 
 [CmdletBinding()]
