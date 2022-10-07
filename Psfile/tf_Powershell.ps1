@@ -1,10 +1,10 @@
 ﻿# Service principal and tenant details.
 <#
-  if using service principal to connect to azure portal
+  if using service principal to create the connection to azure 
   provide the details of the app id, tennat id, client secret and 
   subscription.
   else
-  provide the credential in the get-credential command.
+  provide the credential in the get-credential command at the time of execution.
 #>
 
 [CmdletBinding()]
